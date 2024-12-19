@@ -1,0 +1,14 @@
+/* 在 :root 中声明亮暗主题的颜色变量 */
+:root {
+  /* 亮主题 */
+  --primary-color-light: #3498db; /* 蓝色 */
+  --secondary-color-light: #2ecc71; /* 绿色 */
+  --background-color-light: #ffffff; /* 背景色 */
+  --text-color-light: #333333; /* 文本颜色 */
+
+  /* 暗主题 */
+  --primary-color-dark: #2980b9; /* 深蓝色 */
+  --secondary-color-dark: #27ae60; /* 深绿色 */
+  --background-color-dark: #2c3e50; /* 深背景色 */
+  --text-color-dark: #ecf0f1; /* 浅文本颜色 */
+}
