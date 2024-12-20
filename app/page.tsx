@@ -1,8 +1,12 @@
+
+import styles from './page.module.css';
 const Home: React.FC = () => {
+
   return (
-    <div>
-      <h1>Home Page</h1>
-    </div>
+    <>
+      <div className={styles.swiper}></div>
+      <div className={styles.container}></div>
+    </>
   );
 };
 
