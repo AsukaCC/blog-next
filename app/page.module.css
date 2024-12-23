@@ -2,12 +2,10 @@
     width: 100vw;
     height: auto;
     min-height: 20vh;
-    background-color: bisque;
 }
 
 /*  轮播图 */
 .swiper {
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 20vh;
 }

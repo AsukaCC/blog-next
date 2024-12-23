@@ -1,32 +1,58 @@
+.navbarWarp {
+  width: 100%;
+  display: block;
+  height: 5rem;
+  background-color: transparent;
+}
+
 .navbarContainer {
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
   height: 5rem;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.visible {
-  display: flex;
-}
-
-.disVisible {
-  display: none;
-}
-
-.navbarFixed {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+  display: flex;
+  justify-content: center;
 }
+
+.content {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--navBar-text-color);
+  background: var(--navBar-bg-color);
+  box-shadow: inset 20px 20px 63px var(--navBar-shadow1-color),
+    inset -20px -20px 63px var(--navBar-shadow2-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  /* 添加收缩过渡效果 */
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content.scroll {
+  width: 80%;
+  min-width: 300px;
+  padding: 0.8rem 3rem;
+  margin: 1rem auto 0;
+  border-radius: 0.8rem;
+}
+
+.content.top {
+  width: 100%;
+  min-width: 320px;
+  padding: 0.8rem 0;
+  margin: 0;
+  border-radius: 0;
+}
+
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 
 .navLinks {
   display: flex;
@@ -34,14 +60,4 @@
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.navLinks a {
-  text-decoration: none;
-  color: #666;
-  transition: color 0.3s ease;
-}
-
-.navLinks a:hover {
-  color: #000;
 }
