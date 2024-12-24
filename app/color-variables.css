@@ -1,20 +1,22 @@
 /* 在 :root 中声明亮暗主题的颜色变量 */
+/* 亮主题 */
 :root {
-  /* 亮主题 */
-  --primary-text-color: #000000;
-  --primary-bg-color: #ffffff;
+  --main-color: #f8f8f8;
+  --secondary-color: #ffffff;
+  --main-text-color: #171717;
+  --secondary-text-color: #6f6f6f;
+  --shadow-color1: #0000001a;
+  --shadow-color2: #0000000d;
 }
 
 /* 深色模式 */
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-text-color: #ffffff;
-    --primary-bg-color: #333333;
-
-    --navBar-text-color: #ffffff;
-    --navBar-bg-color: #8f8f8f;
-    --navBar-shadow1-color: #2424248a;
-    --navBar-shadow2-color: #8a8a8a85;
-    --navBar-hover-color: #e0e0e0;
+    --main-color: #1c1c1c;
+    --secondary-color: #282828;
+    --main-text-color: #ededed;
+    --secondary-text-color: #a0a0a0;
+    --shadow-color1: #ffffff1a;
+    --shadow-color2: #ffffff0d;
   }
 }

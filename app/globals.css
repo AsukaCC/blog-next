@@ -13,15 +13,17 @@ body {
 }
 
 body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-bg-color);
+  color: var(--main-text-color);
+  background-color: var(--main-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
 }
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 main {
@@ -35,4 +37,7 @@ main {
 a {
   color: inherit;
   text-decoration: none;
+}
+.box-shadow {
+  box-shadow: var(--shadow-color1) 0px 10px 15px -3px, var(--shadow-color2) 0px 4px 6px -2px;
 }

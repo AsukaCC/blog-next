@@ -1,10 +1,3 @@
-.navbarWarp {
-  width: 100%;
-  display: block;
-  height: 5rem;
-  background-color: transparent;
-}
-
 .navbarContainer {
   width: 100%;
   height: 5rem;
@@ -21,13 +14,11 @@
   font-size: 1.2rem;
   justify-content: center;
   align-items: center;
-  color: var(--navBar-text-color);
-  background: var(--navBar-bg-color);
-  box-shadow: inset 20px 20px 63px var(--navBar-shadow1-color),
-    inset -20px -20px 63px var(--navBar-shadow2-color);
+  color: var(--main-text-color);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-
+  box-shadow: inset 20px 20px 63px var(--main-color),
+    inset -20px -20px 63px var(--secondary-color);
   /* 添加收缩过渡效果 */
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -46,8 +37,8 @@
   padding: 0.8rem 0;
   margin: 0;
   border-radius: 0;
+  background: transparent;
 }
-
 
 .logo {
   font-size: 1.5rem;

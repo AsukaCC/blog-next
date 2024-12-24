@@ -43,7 +43,6 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={`${styles.navbarWarp}`}></div>
       <div ref={targetRef} className={`${styles.navbarContainer}`}>
         <div
           className={`${styles.content} ${
